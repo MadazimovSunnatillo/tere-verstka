@@ -1,0 +1,121 @@
+#works {
+    position: relative;
+    background: #F9F9F9;
+
+    .works-title {
+        @extend %title;
+        padding-bottom: 25px;
+    }
+
+    .works-desc {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 26px;
+        text-align: center;
+        color: #9E9DA2;
+        width: 620px;
+        margin: auto;
+        padding-bottom: 160px;
+    }
+
+    .work-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.number {
+    position: relative;
+
+    .work-num {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+    }
+
+    span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-weight: 800;
+        font-size: 34.1075px;
+        line-height: 37px;
+        color: $green;
+    }
+}
+
+.work-content1 {
+    @extend %work-item;
+
+    .number {
+        position: relative;
+
+        .work-num {
+            position: absolute;
+            right: 0;
+            bottom: 6px;
+        }
+
+        span {
+            position: absolute;
+            right: 22px;
+            bottom: 19px;
+            font-weight: 800;
+            font-size: 34.1075px;
+            line-height: 37px;
+            color: $green;
+        }
+    }
+
+}
+
+.work-content2 {
+    @extend %work-item;
+
+    .work {
+        .title {
+            text-align: left;
+        }
+
+        .desc {
+            text-align: left;
+        }
+
+        .number {
+            position: relative;
+
+            .work-num {
+                position: absolute;
+                left: 0;
+                bottom: 6px;
+            }
+
+            span {
+                position: absolute;
+                left: 22px;
+                bottom: 19px;
+                font-weight: 800;
+                font-size: 34.1075px;
+                line-height: 37px;
+                color: $green;
+            }
+        }
+
+    }
+}
+
+.work-image {
+    .phone {
+        position: absolute;
+        top: 201px;
+        right: 518px;
+        z-index: 999;
+    }
+
+    .ellipse {
+        position: absolute;
+        top: 288px;
+        left: 485px;
+    }
+}
